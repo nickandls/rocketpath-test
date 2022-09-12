@@ -12,5 +12,14 @@
     text-align: left;
 }
 
-
+.search-bar {
+    text-align: left;
+    margin-top: 15px;
+    padding: 5px;
+    width: 250px;
+    height: 25px;
+    background-color: rgb(233, 233, 233);
+    border-style: none;
+    outline-style: white;
+}
 

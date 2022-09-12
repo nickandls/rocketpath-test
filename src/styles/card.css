@@ -13,6 +13,16 @@
    
 }
 
+.user-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-cards > div {
+    margin: 5px;
+}
+
 #card.non-active:hover {
     opacity: 0.8;
     transform: scale(0.9);

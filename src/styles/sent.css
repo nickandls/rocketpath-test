@@ -1,20 +1,17 @@
-.search-bar {
-    text-align: left;
-    margin-top: 15px;
-    padding: 5px;
-    width: 250px;
-    height: 25px;
-    background-color: rgb(233, 233, 233);
-    border-style: none;
-    outline-style: white;
-}
-
 #user {
     background: white;
     width: 30rem;
     text-align: left;
     border-radius: 10px;
     box-shadow: 0 5px 30px rgba(100, 100, 100, 0.325);
+}
+
+#transaction-users {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+#transaction-users > div {
+    margin: 5px;
 }
 
 .user-prof-pic {

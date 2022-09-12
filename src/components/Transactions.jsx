@@ -26,12 +26,10 @@ export default function Transactions(){
                 <TabPanel className="transaction-panel">
                     <input className="search-bar" type="text" placeholder="Search Transaction"/>
 
-                    <Sent sortDate="12/09/2022">
-                        <User profile="./images/user-profile-pic-1.jpg" name="Rebecca Moore" date="12/09/2022" expense="972" />
-                    </Sent>
+                    <Sent/>
 
-                    {/* <Sent sortDate="11/09/2022" userProfilePic="./images/user-profile-pic-2.jpg" userName="Annie Franz" expenseDate="11/09/2022" expense="125" /> */}
-                
+                    <p style={{paddingTop: "5%"}} className="warning-sign">No more transactions!</p>
+
                 
                 </TabPanel>
 

@@ -19,17 +19,11 @@ p{
     color:#9d9d9d
 }
 
-.user-cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.warning-sign {
+    text-align: center;
+    opacity:0.5;
+    font-weight: 400;
 }
-
-.user-cards > div {
-    margin: 5px;
-}
-
- /* Activated or non-Activated cards */
 
 
 /* Creating 2 column section */
@@ -39,7 +33,7 @@ p{
 }
 /* Creating 3 column section */
 
-.column3 {
+.three-column {
     float:left;
     width: 33.3%
 }

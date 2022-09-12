@@ -1,5 +1,6 @@
 import React from "react";
-// import User from "./User";
+import { transactionDatabase } from "../../transactionDatabaseDemo";
+import User from "./User";
 
 export default function Sent(props, {children}) {
     let newDate = new Date()
@@ -10,23 +11,40 @@ export default function Sent(props, {children}) {
     let current = `${date}/${month<10?`0${month}`:`${month}`}/${year}`
 
     return (
-        <div id="transaction-date">
-             
-            {
-                current === props.sortDate 
-                ?
-                <div>
-                    <p>Today</p>
-                    
-                    {/* <User profile={props.profile} name={props.userName} date={props.expenseDate} expense={props.expense} /> */}
-                </div>
-                :
-                <div>
-                    <p>{props.sortDate}</p>
-                    {/* <User profile={props.userProfilePic} name={props.userName} date={props.expenseDate} expense={props.expense} /> */}
-                </div>
+        <div>
 
+            {
+                transactionDatabase.map((trans, key) => (
+                    <div>
+                       
+                        {
+                            current === trans.date
+                            ?
+                                <p>Today</p>
+                            :
+                            <p>{trans.date}</p>
+                        }
+                        
+                        {trans.users.map((user,key) => (
+                            
+                            <div  id="transaction-users">
+
+                                <User 
+                                id={user.key}
+                                profile={user.profile} 
+                                name={user.name} 
+                                date={user.expenseDate} 
+                                expense={user.expense} />
+
+                            </div>
+
+                        ))}
+
+                    </div>
+                ))
             }
+             
+            
         </div>
     );
 }
