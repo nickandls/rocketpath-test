@@ -15,7 +15,7 @@ export default function Sent(props, {children}) {
 
             {
                 transactionDatabase.map((trans, key) => (
-                    <div>
+                    <div id={key}>
                        
                         {
                             current === trans.date

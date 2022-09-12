@@ -4,14 +4,6 @@
     padding-top: 5rem;
 }
 
-.transaction-tabs {
-    text-align: center;
-}
-
-.transaction-panel {
-    text-align: left;
-}
-
 .search-bar {
     text-align: left;
     margin-top: 15px;
@@ -21,5 +13,13 @@
     background-color: rgb(233, 233, 233);
     border-style: none;
     outline-style: white;
+}
+
+.transaction-tabs {
+    text-align: center;
+}
+
+.transaction-panel {
+    text-align: left;
 }
 

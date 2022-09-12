@@ -5,7 +5,7 @@
 #card {
     color: white;
     text-align: center;
-    width:25rem;
+    width:23rem;
     height: 15rem;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(65, 65, 65, 0.325);
@@ -20,7 +20,7 @@
 }
 
 .user-cards > div {
-    margin: 5px;
+    margin: 10px;
 }
 
 #card.non-active:hover {

@@ -5,8 +5,6 @@ import 'react-tabs/style/react-tabs.css';
 //Components
 import Received from "./Transactions/Received";
 import Sent from "./Transactions/Sent";
-import User from "./Transactions/User";
-
 
 //Styling
 import styles from "../styles/transactions.css"
@@ -16,7 +14,7 @@ import sentStyles from "../styles/sent.css"
 export default function Transactions(){
     return(
 
-        <div>
+        <div style={styles}>
             <Tabs className="transaction-tabs">
                 <TabList>
                     <Tab>Sent</Tab>
@@ -25,16 +23,12 @@ export default function Transactions(){
 
                 <TabPanel className="transaction-panel">
                     <input className="search-bar" type="text" placeholder="Search Transaction"/>
-
-                    <Sent/>
-
+                    <Sent style={sentStyles}/>
                     <p style={{paddingTop: "5%"}} className="warning-sign">No more transactions!</p>
-
-                
                 </TabPanel>
 
                 <TabPanel className="transaction-panel">
-                    <Received/>
+                    <Received style={receivedStyles}/>
                 </TabPanel>
 
             </Tabs>
