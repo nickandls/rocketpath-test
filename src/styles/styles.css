@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html {
+    background-color: #f2f2f2;
+    padding-bottom: 5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.App {
+    margin:20px;
+}
+
+/* Headings and Paragraphs
+h1,h2,h3,h4,h5,h6,p {
+    
+} */
+
+p{
+    color:#9d9d9d
+}
+
+.user-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-cards > div {
+    margin: 5px;
+}
+
+ /* Activated or non-Activated cards */
+
+
+/* Creating 2 column section */
+.column {
+    float:left;
+    width: 50%;
+}
+/* Creating 3 column section */
+
+.column3 {
+    float:left;
+    width: 33.3%
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

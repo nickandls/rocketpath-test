@@ -1,0 +1,9 @@
+#profile_pic {
+    float:right;
+    margin:5px;
+    transition: all .2s ease-in-out;
+}
+
+#profile_pic:hover {
+    transform: rotate(-90deg);
+}

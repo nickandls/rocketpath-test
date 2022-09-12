@@ -1,0 +1,36 @@
+.card-p {
+    color: white;
+}
+
+#card {
+    color: white;
+    text-align: center;
+    width:25rem;
+    height: 15rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(65, 65, 65, 0.325);
+    transition: ease .2s all;
+   
+}
+
+#card.non-active:hover {
+    opacity: 0.8;
+    transform: scale(0.9);
+}
+#card.active:hover {
+    transform: scale(1.05);
+}
+
+.owner-details {
+    padding-left: 5rem;
+    text-align: left;
+}
+.active {
+    opacity: 1;
+}
+
+.non-active {
+    opacity: 0.5;
+    transform: scale(0.8);
+}
+

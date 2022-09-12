@@ -1,0 +1,53 @@
+.search-bar {
+    text-align: left;
+    margin-top: 15px;
+    padding: 5px;
+    width: 250px;
+    height: 25px;
+    background-color: rgb(233, 233, 233);
+    border-style: none;
+    outline-style: white;
+}
+
+#user {
+    background: white;
+    width: 30rem;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0 5px 30px rgba(100, 100, 100, 0.325);
+}
+
+.user-prof-pic {
+    border-radius: 50px;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+}
+
+.username {
+    color: #272727;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.expense {
+    color: red;
+    font-size: 22px;
+    text-align: right;
+    padding-top: 1rem;
+    padding-right: 2rem;
+}
+
+/* Edit columns */
+.column-1 {
+    width: 15%;
+    float: left;
+}
+.column-2 {
+    width: 50%;
+    float:left;
+    padding-left: 1rem;
+}
+.column-3 {
+    width: 30%;
+    float:left;
+}
