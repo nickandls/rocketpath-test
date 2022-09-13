@@ -12,6 +12,7 @@
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(65, 65, 65, 0.325);
     transition: ease .2s all;
+    cursor: pointer;
 }
 
 /* Using Flex Disply to align the elements */
@@ -73,6 +74,14 @@
 
     .non-active {
         opacity: 0.7;
+        transform: scale(1);
+    }
+
+    #card.non-active:hover {
+        opacity: 1;
+        transform: scale(1);
+    }
+    #card.active:hover {
         transform: scale(1);
     }
 

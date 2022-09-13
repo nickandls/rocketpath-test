@@ -65,6 +65,5 @@ p {
     .App {
         margin-top: -2rem !important; 
         margin:auto;
-        transform: scale(0.9);
     }
 }
