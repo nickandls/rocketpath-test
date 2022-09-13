@@ -54,4 +54,16 @@
     .search-bar {
         width: 100%;
     }
+    #user {
+        width: 15rem;
+        text-align: left;
+    }
+    .expense {
+        color: red;
+        font-size: 18px !important;
+        text-align: right;
+        padding-top: 1rem;
+        padding-right: 2rem;
+    }
+
 }

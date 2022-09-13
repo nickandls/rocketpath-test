@@ -17,7 +17,7 @@ import styles from "./styles/styles.css";
 
 
 
-function App() {
+export default function App() {
 
 
   return (
@@ -40,7 +40,7 @@ function App() {
             },
             1024: {
               slidesPerView: 3,
-              spaceBetween: 50,
+              spaceBetween: 50
             },
 
           }}
@@ -78,4 +78,3 @@ function App() {
   );
 }
 
-export default App;

@@ -11,7 +11,7 @@ export default function Sent(props, {children}) {
     let current = `${date}/${month<10?`0${month}`:`${month}`}/${year}`
 
     return (
-        <div>
+        <div id="users-content">
 
             {
                 transactionDatabase.map((trans, key) => (

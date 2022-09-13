@@ -6,6 +6,7 @@
     box-shadow: 0 5px 15px rgba(100, 100, 100, 0.325);
 }
 
+
 #transaction-users {
     display: inline-flex;
     flex-wrap: wrap;
@@ -36,15 +37,36 @@
 
 /* Edit columns */
 .column-1 {
-    width: 15%;
+    width: 18%;
     float: left;
 }
 .column-2 {
-    width: 50%;
+    width: 45%;
     float:left;
     padding-left: 1rem;
 }
 .column-3 {
     width: 30%;
     float:left;
+}
+
+@media only screen and (max-width: 992px) {
+
+    #user {
+        width: 22rem;
+        text-align: left;
+    }
+    .username {
+        color: #272727;
+        font-weight: 700;
+        font-size: 16px;
+    }
+    .expense {
+        color: red;
+        font-size: 18px;
+        text-align: right;
+        padding-top: 1rem;
+        padding-right: 2rem;
+    }
+
 }

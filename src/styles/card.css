@@ -2,6 +2,7 @@
     color: white;
 }
 
+/* Card CSS */
 #card {
     color: white;
     text-align: center;
@@ -13,6 +14,7 @@
     transition: ease .2s all;
 }
 
+/* Using Flex Disply to align the elements */
 .user-cards {
     display: flex;
     flex-direction: row;
@@ -30,7 +32,7 @@
     transform: scale(0.9);
 }
 #card.active:hover {
-    transform: scale(0.9);
+    transform: scale(0.95);
 }
 
 .owner-details {
@@ -46,24 +48,27 @@
     transform: scale(0.8);
 }
 
+/* !important is used to bypass default library's CSS */
+.swiper-slide {
+    margin: 15px !important;
+    width: 350px !important;
+    height: 300px !important;
+}
+
 
 @media only screen and (max-width: 768px) {
     #card {
         color: white;
         text-align: center;
-        width: 23rem;
-        height: 15rem;
+        width: 22rem;
+        height: 14rem;
         margin: 0;
-        border-radius: 10px;
-        transition: ease .2s all;
-    
-    }
-    .user-cards > div {
-        margin: 0px;
-    }
+      }
 
-    .swiper-slide{
-        padding: 1rem;
+    .swiper-slide {
+        margin: 12px !important;
+        width: 350px !important;
+        height: 230px !important;
     }
 
     .non-active {
