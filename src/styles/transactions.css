@@ -1,7 +1,7 @@
 .user-transactions {
     font-family: 'Montserrat', sans-serif;;
     font-size: 20px;
-    padding-top: 5rem;
+    padding-top: 2rem;
 }
 
 .search-bar {
@@ -26,6 +26,30 @@
     text-align: left;
 }
 
+/* Edit React Tabs library */
+.react-tabs__tab-list {
+    font-weight: 700;
+    border-bottom-color: rgb(221, 220, 220);
+}
+
+.react-tabs__tab {
+    background-color: #F2F2F2 ;
+    border: 0;
+}
+
+.react-tabs__tab--selected {
+    border: solid rgb(255, 167, 34);
+    border-width: 0 0 3px 0;
+}
+
+.react-tabs__tab:active{
+    border: solid rgb(255, 167, 34);
+    border:0;
+}
+.react-tabs__tab:focus:after {
+    background-color: rgba(245, 245, 220, 0);
+    
+}
 @media only screen and (max-width: 992px) {
     .search-bar {
         width: 100%;

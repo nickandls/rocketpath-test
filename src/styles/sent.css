@@ -1,9 +1,9 @@
 #user {
     background: white;
-    width: 30rem;
+    width: 25rem;
     text-align: left;
     border-radius: 10px;
-    box-shadow: 0 5px 30px rgba(100, 100, 100, 0.325);
+    box-shadow: 0 5px 15px rgba(100, 100, 100, 0.325);
 }
 
 #transaction-users {
@@ -11,7 +11,7 @@
     flex-wrap: wrap;
 }
 #transaction-users > div {
-    margin: 5px;
+    margin: .5rem;
 }
 
 .user-prof-pic {

@@ -7,31 +7,30 @@
     text-align: center;
     width: 23rem;
     height: 15rem;
-    margin: 1rem;
+    margin: auto;
     border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(65, 65, 65, 0.325);
+    box-shadow: 0 5px 15px rgba(65, 65, 65, 0.325);
     transition: ease .2s all;
-   
 }
-
 
 .user-cards {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-} */
 
-.user-cards > div {
+} 
+
+/* .user-cards > div {
     margin: 10px;
-}
+} */
 
 #card.non-active:hover {
     opacity: 0.8;
     transform: scale(0.9);
 }
 #card.active:hover {
-    transform: scale(1.05);
+    transform: scale(0.9);
 }
 
 .owner-details {
@@ -47,9 +46,30 @@
     transform: scale(0.8);
 }
 
-@media only screen and (max-width: 992px) {
 
+@media only screen and (max-width: 768px) {
+    #card {
+        color: white;
+        text-align: center;
+        width: 23rem;
+        height: 15rem;
+        margin: 0;
+        border-radius: 10px;
+        transition: ease .2s all;
+    
+    }
+    .user-cards > div {
+        margin: 0px;
+    }
 
+    .swiper-slide{
+        padding: 1rem;
+    }
+
+    .non-active {
+        opacity: 0.7;
+        transform: scale(1);
+    }
 
 }
 
