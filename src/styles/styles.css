@@ -61,9 +61,8 @@ p {
     html {
         padding-bottom: 0;
     }
-    /* Using !important to bypass margin:auto for the top  */
+    
     .App {
-        margin-top: -2rem !important; 
         margin:auto;
     }
 }

@@ -9,14 +9,11 @@ export default function Card(props){
 
           
         if(findClass==="active") {
-
             event.currentTarget.classList.remove("active");
             event.currentTarget.classList.add("non-active");
         }
         else
-        {   
-                        
-               
+        {       
             event.currentTarget.classList.remove("non-active");
             event.currentTarget.classList.add("active");
         }

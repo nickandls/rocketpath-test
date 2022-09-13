@@ -51,7 +51,6 @@ export default function App() {
           
           >
         {
-
             cardDatabase.map((card, key) => (
               
               <SwiperSlide>
