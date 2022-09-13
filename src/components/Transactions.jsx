@@ -22,7 +22,7 @@ export default function Transactions(){
                 </TabList>
 
                 <TabPanel className="transaction-panel">
-                    <input className="search-bar" type="text" placeholder="Search Transaction"/>
+                    <input className="search-bar" type="text" placeholder="Search transaction"/>
                     <Sent style={sentStyles}/>
                     <p style={{paddingTop: "5%"}} className="warning-sign">No more transactions!</p>
                 </TabPanel>

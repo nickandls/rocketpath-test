@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../styles/card.css"
 
 export default function Card(props){
@@ -6,15 +6,21 @@ export default function Card(props){
 
     function handleClick(event) {
         const findClass = event.currentTarget.classList.value;
+
+          
         if(findClass==="active") {
+
             event.currentTarget.classList.remove("active");
             event.currentTarget.classList.add("non-active");
         }
         else
-        {
+        {   
+                        
+               
             event.currentTarget.classList.remove("non-active");
             event.currentTarget.classList.add("active");
         }
+
     }
     return(
         <div id="card" className={props.defaultClass} style={{backgroundColor: color}} onClick={handleClick}>

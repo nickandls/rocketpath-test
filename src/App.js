@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import Header from "./components/Header";
 import Card from "./components/Card";
 import Transactions from "./components/Transactions";
 //https://www.npmjs.com/package/react-tabs
 
+import {cardDatabase} from "./cardDatabaseDemo";
 import styles from "./styles/styles.css";
 
 function App() {
@@ -15,29 +16,24 @@ function App() {
       <Header/>
 
       <div className="user-cards">
-        <Card 
-          defaultClass="non-active"
-          type="VISA" 
-          number="3546" 
-          holder="John Doe" 
-          expiration="02/20" 
-          color="#64fc6c"  />
 
-        <Card 
-          defaultClass="active"
-          type="VISA" 
-          number="8014" 
-          holder="Lindsey Johnson" 
-          expiration="08/21" 
-          color="#9b6dff" />
+        {
 
-        <Card 
-          defaultClass="non-active"
-          type="VISA" 
-          number="3849" 
-          holder="Lee Dojo" 
-          expiration="04/22" 
-          color="#fc5353" />
+            cardDatabase.map((card, key) => (
+              
+              <Card 
+                key={key}
+                defaultClass={card.defaultClass}
+                type={card.type}
+                number={card.number}
+                holder={card.holder}
+                expiration={card.expiration}
+                color={card.color}
+
+                />
+            ))
+        }
+
       </div>
 
       <div className="user-transactions">
