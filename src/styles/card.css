@@ -1,18 +1,21 @@
-.card-p {
-    color: white;
-}
-
 /* Card CSS */
 #card {
-    color: white;
-    text-align: center;
-    width: 23rem;
-    height: 15rem;
     margin: auto;
+    width: 23rem;
+    height: auto;
+    text-align: center;
+    color: white;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(65, 65, 65, 0.325);
     transition: ease .2s all;
     cursor: pointer;
+}
+#card #card-details {
+    padding: 5% !important;
+}
+
+.card-p {
+    color: white;
 }
 
 /* Using Flex Disply to align the elements */
@@ -21,12 +24,23 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
 } 
 
-/* .user-cards > div {
-    margin: 10px;
-} */
+.left-column{
+    text-align: left;
+}
+.right-column {
+    text-align: right;
+}
+
+#card.active {
+    opacity: 1;
+}
+
+#card.non-active {
+    opacity: 0.5;
+    transform: scale(0.8);
+}
 
 #card.non-active:hover {
     opacity: 0.8;
@@ -36,52 +50,39 @@
     transform: scale(0.95);
 }
 
-.owner-details {
-    padding-left: 5rem;
-    text-align: left;
-}
-.active {
-    opacity: 1;
-}
-
-.non-active {
-    opacity: 0.5;
-    transform: scale(0.8);
-}
 
 @media only screen and (min-width: 1024px) {
 /* !important is used to bypass default library's CSS */
-    .swiper-slide.swiper-slide-next {
-        margin: auto !important;
+    
+    .swiper-slide {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important; 
     }
 }
 
-
 @media only screen and (max-width: 768px) {
+    .swiper-slide.swiper-slide-next {
+        margin: auto !important;
+    }
+    .swiper-slide {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+    }
+
     #card {
-        color: white;
-        text-align: left;
+        height: auto;
+        margin: auto;
         width: 20rem;
-        height: 13rem;
-        margin: 0;
+        color: white;
+        cursor: none;
     }
 
-    #card-details {
-        text-align: center;
+    #card div {
+        margin-bottom: -10px;
     }
 
-    .owner-details {
-        padding-left: 2rem;
-    }
-
-    /* .swiper-slide {
-        margin: 10px !important;
-        width: 350px !important;
-        height: 230px !important;
-    } */
-
-    .non-active {
-        opacity: 0.7;
+    #card.non-active {
+        opacity: 0.3;
         transform: scale(1);
     }
 

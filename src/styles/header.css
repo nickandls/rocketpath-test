@@ -1,6 +1,6 @@
 #profile_pic {
     float:right;
-    margin:5px;
+    margin: 2rem 0;
     transition: all .2s ease-in-out;
 }
 

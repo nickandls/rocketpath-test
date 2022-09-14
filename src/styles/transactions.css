@@ -52,7 +52,7 @@
 }
 @media only screen and (max-width: 992px) {
     .search-bar {
-        width: 100%;
+        width:99%;
     }
     #user {
         width: 15rem;

@@ -32,7 +32,7 @@ export default function App() {
           breakpoints={{
             640: {
               slidesPerView: 1,
-              spaceBetween: 20,
+              spaceBetween: 30,
             },
             768: {
               slidesPerView: 1,
@@ -40,7 +40,7 @@ export default function App() {
             },
             1024: {
               slidesPerView: 3,
-              spaceBetween: 20
+              spaceBetween: 30
             },
 
           }}
