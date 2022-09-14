@@ -2,17 +2,6 @@
 
 export const transactionDatabase = [
     {
-        date: "14/09/2022",        
-        users: [
-            { 
-                    profile: "./images/user-profile-pic-3.jpg",
-                    name:"John Doe",
-                    expenseDate: "14/09/2022",
-                    expense: 150
-            }
-        ],
-    },
-    {
         date: "11/09/2022",        
         users: [
             { 
@@ -34,6 +23,18 @@ export const transactionDatabase = [
                 expense: 320
             }
             
+        ],
+    },
+
+    {
+        date: "14/09/2022",        
+        users: [
+            { 
+                    profile: "./images/user-profile-pic-3.jpg",
+                    name:"John Doe",
+                    expenseDate: "14/09/2022",
+                    expense: 150
+            }
         ],
     },
     

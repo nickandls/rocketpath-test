@@ -1,16 +1,15 @@
 import React, {useState} from "react";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
+// Import React Tabs
 //https://www.npmjs.com/package/react-tabs
 import 'react-tabs/style/react-tabs.css';
 
 //Components
-import Received from "./Transactions/Received";
-import Sent from "./Transactions/Sent";
-import User from "./Transactions/User";
+import SeacrhResults from "./SearchResults";
+import Received from "./Received";
+import Sent from "./Sent";
 
-//DB
-import { transactionDatabase } from "../transactionDatabaseDemo";
 
 //Styling
 import styles from "../styles/transactions.css"
@@ -19,30 +18,11 @@ import sentStyles from "../styles/sent.css"
 
 export default function Transactions(){
     const [input, setInput] = useState("");
-    const [SeacrhResult, setSearchResults] = useState();
-
-    // const usersList = transactionDatabase.map(trans => trans.users);
-
-    // console.log(transactionDatabase[1].users[1].name)
 
     function handleChange(e) {
         const value = e.target.value;
         setInput(value)
-
-        var result = transactionDatabase.find(item => 
-            item.users.find(user => user.name === value))
-
-        console.log("Result: " + JSON.stringify(result));
-        
-        var res = Object.keys(result).map(key => [Number(key), result[key]])
-
-        console.log(res)
-    
-        // return setSearchResults( 
-        //     <div> 
-        //     </div>
-        // )
-          
+        return(input)
     }
 
     return(
@@ -64,9 +44,20 @@ export default function Transactions(){
 
                 <TabPanel className="transaction-panel">
                     <input className="search-bar" type="text" onChange={handleChange} value={input} placeholder="Search transaction"/>
-                    <div> { SeacrhResult } </div>
-                    <Sent style={sentStyles}/>
-                    <p style={{paddingTop: "5%"}} className="warning-sign">No more transactions!</p>
+                    
+                    <div> 
+                    { 
+                        input === "" 
+                            ? 
+                            <div>
+                                <Sent style={sentStyles}/> 
+                                <p style={{paddingTop: "5%"}} className="warning-sign">No more transactions!</p>
+                            </div>
+                            :
+                            <SeacrhResults result={input}/>
+                     } 
+                    </div>
+
                 </TabPanel>
 
                 <TabPanel className="transaction-panel">
