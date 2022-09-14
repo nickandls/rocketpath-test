@@ -2,27 +2,28 @@ import React, { useState } from "react";
 import styles from "../styles/card.css"
 
 export default function Card(props){
+    const [isActive, setIsActive] = useState(props.defaultClass);
     const color = props.color;
 
+    // Change the state of the card between active and non-active
     function handleClick(event) {
         const findClass = event.currentTarget.classList.value;
-
-          
+        
         if(findClass==="active") {
-            event.currentTarget.classList.remove("active");
-            event.currentTarget.classList.add("non-active");
+            setIsActive("non-active");
         }
-        else
-        {       
-            event.currentTarget.classList.remove("non-active");
-            event.currentTarget.classList.add("active");
+        else {       
+            setIsActive("active");
         }
-
+        return isActive;
     }
     return(
-        <div id="card" className={props.defaultClass} style={{backgroundColor: color}} onClick={handleClick}>
+        <div id="card" className={isActive} style={{backgroundColor: color}} onClick={handleClick}>
             <div id="card-details">
                 <div className="row">
+
+                    {/* Card type (Visa/Mastercard etc)  */}
+
                     <div className="column  left-column">
                         <h3>{props.type}</h3>
                     </div>
@@ -30,7 +31,13 @@ export default function Card(props){
                         <h3>...</h3>
                     </div>
                 </div>
+
+                {/* Card number is hardcoded except the last 4 numbers */}
+
                 <h3>* * * * &nbsp;&nbsp; * * * * &nbsp;&nbsp; * * * * &nbsp;&nbsp; {props.number}</h3>
+
+                {/* Owner details and expiration date */}
+
                 <div className="row owner-details">
                     <div className="column left-column">
                         <p className="card-p">Card Holder</p>

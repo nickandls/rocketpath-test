@@ -1,4 +1,4 @@
-/* Card CSS */
+/* CARD CSS */
 #card {
     margin: auto;
     width: 23rem;
@@ -10,15 +10,17 @@
     transition: ease .2s all;
     cursor: pointer;
 }
+/* All card details CSS */
 #card #card-details {
-    padding: 5% !important;
+    padding: 1rem !important;
 }
 
-.card-p {
+/* Specifying 'p' tag color for this  */
+#card p {
     color: white;
 }
 
-/* Using Flex Disply to align the elements */
+/* Flex Disply to align all cards */
 .user-cards {
     display: flex;
     flex-direction: row;
@@ -26,13 +28,18 @@
     align-items: center;
 } 
 
+/* Specifying the alignment of the columns  */
 .left-column{
     text-align: left;
+}
+.column > h4 {
+    margin-top: -10px;
 }
 .right-column {
     text-align: right;
 }
 
+/* Active and Non-Active Card Effects */
 #card.active {
     opacity: 1;
 }
@@ -50,25 +57,32 @@
     transform: scale(0.95);
 }
 
-
+/* Responsiveness for desktops (big screens) */
 @media only screen and (min-width: 1024px) {
 /* !important is used to bypass default library's CSS */
     
     .swiper-slide {
         padding-top: 1rem !important;
         padding-bottom: 1rem !important; 
+        width: fit-content !important;
     }
 }
-
+/* Responsiveness up to smartphone/some tablets (small/medium screens) */
 @media only screen and (max-width: 768px) {
+
+    /*  
+        Changing some CSS of the swiper 
+        !important was used to bypass the default swiper CSS
+     */
     .swiper-slide.swiper-slide-next {
         margin: auto !important;
     }
     .swiper-slide {
-        padding-top: 1rem !important;
-        padding-bottom: 1rem !important;
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
     }
 
+    /* Changing some Card CSS */
     #card {
         height: auto;
         margin: auto;
@@ -79,19 +93,6 @@
 
     #card div {
         margin-bottom: -10px;
-    }
-
-    #card.non-active {
-        opacity: 0.3;
-        transform: scale(1);
-    }
-
-    #card.non-active:hover {
-        opacity: 1;
-        transform: scale(1);
-    }
-    #card.active:hover {
-        transform: scale(1);
     }
 
 }

@@ -1,3 +1,4 @@
+/* USER CSS */
 #user {
     background: white;
     width: 25rem;
@@ -6,7 +7,7 @@
     box-shadow: 0 5px 15px rgba(100, 100, 100, 0.325);
 }
 
-
+/* Align the transactions */
 #users-transaction {
     display: inline-flex;
     flex-wrap: wrap;
@@ -15,6 +16,7 @@
     margin: .5rem;
 }
 
+/* User information CSS (profile image, name, expenses */
 .user-prof-pic {
     border-radius: 50px;
     margin-top: 1.5rem;
@@ -35,7 +37,7 @@
     padding-right: 2rem;
 }
 
-/* Edit columns */
+/* Edit columns ( creating specifing columns for the transaction's display ) */
 .column-1 {
     width: 18%;
     float: left;
@@ -49,6 +51,8 @@
     width: 30%;
     float:left;
 }
+
+/* Responsiveness  */
 
 @media only screen and (max-width: 992px) {
 

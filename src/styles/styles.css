@@ -25,17 +25,23 @@ h4 {
     font-size: 14px;
 }
 */
+
 p {
     font-size: 16px;
     color:#9d9d9d
 } 
 
+/* Simple warning sign CSS */
 .warning-sign {
     text-align: center;
     opacity:0.5;
     font-weight: 400;
 }
 
+/* ROW AND COLUMNS
+    -- 2 columned sections
+    -- 3 columned sections
+*/
 
 /* Creating 2 column section */
 .column {
@@ -56,7 +62,7 @@ p {
     clear: both;
 }
 
-
+/* Responsive */
 @media only screen and (max-width: 992px) {
     html {
         padding-bottom: 0;

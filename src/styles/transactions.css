@@ -1,9 +1,10 @@
+/* TRANSACTIONS CSS */
 .user-transactions {
     font-family: 'Montserrat', sans-serif;;
     font-size: 20px;
     padding-top: 2rem;
 }
-
+/* Search bar styling */
 .search-bar {
     text-align: left;
     margin-top: 15px;
@@ -18,6 +19,7 @@
     opacity: 0.5;
 }
 
+/* Tab Styling */
 .transaction-tabs {
     text-align: center;
 }
@@ -50,6 +52,9 @@
     background-color: rgba(245, 245, 220, 0);
     
 }
+
+/* Responsiveness */
+
 @media only screen and (max-width: 992px) {
     .search-bar {
         width:99%;

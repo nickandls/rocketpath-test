@@ -2,7 +2,6 @@ import React from "react";
 import Header from "./components/Header";
 import Card from "./components/Card";
 import Transactions from "./components/Transactions";
-//https://www.npmjs.com/package/react-tabs
 
 // Import Swiper React components
 //https://swiperjs.com/react
@@ -19,14 +18,11 @@ import styles from "./styles/styles.css";
 
 export default function App() {
 
-
   return (
     <div className="App" style={styles}>
-
       <Header/>
-
       <div className="user-cards">
-
+      {/* Creating Swiper and specifying swiper's settings */}
         <Swiper
           modules={[Grid]}
           breakpoints={{
@@ -48,9 +44,14 @@ export default function App() {
             rows:1
           }}
           className="cards-swiper"
-          
           >
-        {
+    
+          {
+            /* 
+              --Map card database into Card component
+              --Creating SwiperSlide, each slide that will be created
+                will contain a card from the database 
+            */
             cardDatabase.map((card, key) => (
               
               <SwiperSlide>
@@ -64,15 +65,14 @@ export default function App() {
                   color={card.color}
                 />
               </SwiperSlide>
+
             ))
-        }
+          }
         </Swiper>
       </div>
-
       <div className="user-transactions">
         <Transactions/>
       </div>
-
     </div>
   );
 }

@@ -1,5 +1,7 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+
+//https://www.npmjs.com/package/react-tabs
 import 'react-tabs/style/react-tabs.css';
 
 //Components
@@ -14,7 +16,15 @@ import sentStyles from "../styles/sent.css"
 export default function Transactions(){
     return(
 
+        // Tabs component:
+        ////    TabList component that contains the options
+        ////    TabPanel component that contains the information of
+        ////       each TabList
+
         <div style={styles}>
+
+        {/* Creating the Tabs */}
+
             <Tabs className="transaction-tabs">
                 <TabList>
                     <Tab>Sent</Tab>
