@@ -52,7 +52,7 @@ export default function App() {
               --Creating SwiperSlide, each slide that will be created
                 will contain a card from the database 
             */
-            cardDatabase.map((card, key) => (
+            cardDatabase.slice().reverse().map((card, key) => (
               
               <SwiperSlide>
                 <Card

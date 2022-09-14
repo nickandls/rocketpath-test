@@ -53,9 +53,7 @@
     opacity: 0.8;
     transform: scale(0.9);
 }
-#card.active:hover {
-    transform: scale(0.95);
-}
+
 
 /* Responsiveness for desktops (big screens) */
 @media only screen and (min-width: 1024px) {

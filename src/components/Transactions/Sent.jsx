@@ -5,6 +5,7 @@ import User from "./User";
 export default function Sent(props, {children}) {
 
     // Find current date
+    
     let newDate = new Date()
     let date = newDate.getDate();
     let month = newDate.getMonth() + 1;
