@@ -51,10 +51,8 @@
 
 @media only screen and (min-width: 1024px) {
 /* !important is used to bypass default library's CSS */
-    .swiper-slide {
-        margin: 15px !important;
-        width: 350px !important;
-        height: 300px !important;
+    .swiper-slide.swiper-slide-next {
+        margin: auto !important;
     }
 }
 
@@ -76,11 +74,11 @@
         padding-left: 2rem;
     }
 
-    .swiper-slide {
+    /* .swiper-slide {
         margin: 10px !important;
         width: 350px !important;
         height: 230px !important;
-    }
+    } */
 
     .non-active {
         opacity: 0.7;
@@ -94,7 +92,6 @@
     #card.active:hover {
         transform: scale(1);
     }
-
 
 }
 

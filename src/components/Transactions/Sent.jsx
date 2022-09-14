@@ -27,7 +27,7 @@ export default function Sent(props, {children}) {
                         
                         {trans.users.map((user,key) => (
                             
-                            <div id="transaction-users">
+                            <div id="users-transaction">
 
                                 <User 
                                 id={user.key}
