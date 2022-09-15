@@ -114,9 +114,8 @@
     .icons-transaction svg:hover {
         transform: scale(1);
     }
-
-    .search-bar {
-        width:95%;
+    .search-transaction {
+        width: 100% !important;
     }
     #user {
         width: 15rem;
