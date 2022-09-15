@@ -18,7 +18,7 @@ export const cardData = [
         color: "#9b6dff"
     },
     {
-        defaultClass: "active",
+        defaultClass: "non-active",
         type: "VISA",
         number: "3849",
         holder: "Lee Done",
