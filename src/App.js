@@ -11,7 +11,7 @@ import { Grid } from 'swiper';
 // Import Swiper styles
 import 'swiper/css';
 
-import {cardData} from "./cardData";
+import {cardData} from "./data/cardData";
 import styles from "./styles/styles.css";
 
 
@@ -25,7 +25,7 @@ export default function App() {
         Creating Swiper and specifying swiper's settings 
         The swiper is being used to show the cards
       */}
-      
+
         <Swiper
           modules={[Grid]}
           breakpoints={{
@@ -54,9 +54,8 @@ export default function App() {
             */
             cardData.map((card, key) => (
               
-              <SwiperSlide>
+              <SwiperSlide key={key}>
                 <Card
-                  key={key}
                   defaultClass={card.defaultClass}
                   type={card.type}
                   number={card.number}

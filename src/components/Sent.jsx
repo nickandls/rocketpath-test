@@ -1,8 +1,8 @@
 import React from "react";
-import { transactionData } from "../transactionData";
+import { transactionData } from "../data/transactionData";
 import User from "./User";
 
-export default function Sent(props, {children}) {
+export default function Sent(props) {
 
     // Find current date
 
@@ -25,7 +25,7 @@ export default function Sent(props, {children}) {
 
             {
                 transactionData.slice().reverse().map((trans, key) => (
-                    <div id={key}>
+                    <div className="user-transaction-date" key={key}>
                        
                         {
                             current === trans.date
@@ -35,16 +35,16 @@ export default function Sent(props, {children}) {
                             <p>{trans.date}</p>
                         }
 
-                        {trans.users.map((user,key) => (
+                        {trans.users.map((user, index) => (
 
-                            <div id="users-transaction">
+                            <div id="users-transaction" key={index}>
                                 <User 
-                                id={user.key}
-                                profile={user.profile} 
-                                name={user.name} 
-                                date={user.expenseDate} 
-                                expense={user.expense} />
-
+                                    key={index}
+                                    profile={user.profile} 
+                                    name={user.name} 
+                                    date={user.expenseDate} 
+                                    expense={user.expense}
+                                />
                             </div>
                             
                         ))}

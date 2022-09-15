@@ -1,6 +1,6 @@
 import React from "react";
 import User from "./User";
-import { transactionData } from "../transactionData";
+import { transactionData } from "../data/transactionData";
 
 export default function SeacrhResults(props) {
     const input = props.searchedFor

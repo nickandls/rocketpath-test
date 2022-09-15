@@ -51,15 +51,15 @@ export default function Transactions(){
 
                 <TabPanel className="transaction-panel">
 
-                    <div class="row">
+                    <div className="row">
                     
-                        <div class="column left-column search-transaction">
+                        <div className="column left-column search-transaction">
                             <input className="search-bar" type="text" onChange={handleChange} value={input} placeholder="Search transaction"/>
                         </div>
 
                         {/* Icons (radio button based) */}
 
-                        <div class="column right-column icons-transaction">
+                        <div className="column right-column icons-transaction">
 
                             <label>
                                 <input type="radio" name="option" value="wallet" disabled/>
@@ -67,7 +67,7 @@ export default function Transactions(){
                             </label>
 
                             <label>
-                                <input type="radio" name="option" value="settings" checked/>
+                                <input type="radio" name="option" value="settings" defaultChecked/>
                                 <FontAwesomeIcon icon={faGear} />
                             </label>
 
