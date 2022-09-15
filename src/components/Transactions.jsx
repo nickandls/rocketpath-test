@@ -3,9 +3,11 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 // Import Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWallet } from '@fortawesome/free-solid-svg-icons'
-import { faGear } from '@fortawesome/free-solid-svg-icons'
-import { faChartPie } from '@fortawesome/free-solid-svg-icons'
+import { faWallet } from '@fortawesome/free-solid-svg-icons';
+import { faGear } from '@fortawesome/free-solid-svg-icons';
+import { faChartPie } from '@fortawesome/free-solid-svg-icons';
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+
 
 
 // Import React Tabs
@@ -55,6 +57,7 @@ export default function Transactions(){
                     
                         <div className="column left-column search-transaction">
                             <input className="search-bar" type="text" onChange={handleChange} value={input} placeholder="Search transaction"/>
+                            <button className="search-button" type="submit"> <FontAwesomeIcon icon={faMagnifyingGlass} /> </button>
                         </div>
 
                         {/* Icons (radio button based) */}

@@ -24,19 +24,27 @@
 }
 
 /* Search bar styling */
+
 .search-bar {
     text-align: left;
     margin-top: 15px;
-    padding: 5px;
+    padding: 10px;
     width: 250px;
-    height: 25px;
     background-color: rgb(233, 233, 233);
     font-family: 'Montserrat', sans-serif;
-   
     border-style: none;
     outline-style: white;
 }
 ::placeholder {
+    opacity: 0.5;
+}
+.search-button {
+    background-color: rgb(233, 233, 233);
+    height: auto;
+    padding: 10px;
+    border:none; 
+}
+.search-button svg {
     opacity: 0.5;
 }
 
@@ -121,8 +129,6 @@
         padding-top: 1rem;
         padding-right: 2rem;
     }
-
-    
 
 }
 @media only screen and (max-width: 768px) {
