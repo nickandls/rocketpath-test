@@ -11,18 +11,21 @@ import { Grid } from 'swiper';
 // Import Swiper styles
 import 'swiper/css';
 
-import {cardDatabase} from "./cardDatabaseDemo";
+import {cardData} from "./cardData";
 import styles from "./styles/styles.css";
 
 
 
 export default function App() {
-
   return (
     <div className="App" style={styles}>
       <Header/>
       <div className="user-cards">
-      {/* Creating Swiper and specifying swiper's settings */}
+      {/*
+        Creating Swiper and specifying swiper's settings 
+        The swiper is being used to show the cards
+      */}
+      
         <Swiper
           modules={[Grid]}
           breakpoints={{
@@ -39,20 +42,17 @@ export default function App() {
               spaceBetween: 30
             },
 
-          }}
-          grid={{
-            rows:1
-          }}
-          className="cards-swiper"
-          >
-    
+          }} grid={{
+              rows:1
+          }} className="cards-swiper"
+        >
           {
             /* 
               --Map card database into Card component
               --Creating SwiperSlide, each slide that will be created
                 will contain a card from the database 
             */
-            cardDatabase.map((card, key) => (
+            cardData.map((card, key) => (
               
               <SwiperSlide>
                 <Card

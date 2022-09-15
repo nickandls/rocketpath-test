@@ -1,5 +1,12 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+
+// Import Icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWallet } from '@fortawesome/free-solid-svg-icons'
+import { faGear } from '@fortawesome/free-solid-svg-icons'
+import { faChartPie } from '@fortawesome/free-solid-svg-icons'
+
 
 // Import React Tabs
 //https://www.npmjs.com/package/react-tabs
@@ -43,18 +50,46 @@ export default function Transactions(){
                 </TabList>
 
                 <TabPanel className="transaction-panel">
-                    <input className="search-bar" type="text" onChange={handleChange} value={input} placeholder="Search transaction"/>
+
+                    <div class="row">
                     
+                        <div class="column left-column search-transaction">
+                            <input className="search-bar" type="text" onChange={handleChange} value={input} placeholder="Search transaction"/>
+                        </div>
+
+                        {/* Icons (radio button based) */}
+
+                        <div class="column right-column icons-transaction">
+
+                            <label>
+                                <input type="radio" name="option" value="wallet" disabled/>
+                                <FontAwesomeIcon icon={faWallet} />
+                            </label>
+
+                            <label>
+                                <input type="radio" name="option" value="settings" checked/>
+                                <FontAwesomeIcon icon={faGear} />
+                            </label>
+
+                            <label>
+                                <input type="radio" name="option" value="chart" disabled/>
+                                <FontAwesomeIcon icon={faChartPie} />
+                            </label>
+                        
+                        </div>
+                        
+                    </div>
                     <div> 
+                    {/* Render all the transactions or the search results */}
                     { 
                         input === "" 
                             ? 
-                            <div>
-                                <Sent style={sentStyles}/> 
-                                <p style={{paddingTop: "5%"}} className="warning-sign">No more transactions!</p>
-                            </div>
+                                <div>
+                                    <Sent style={sentStyles}/> 
+                                    <p style={{paddingTop: "5%"}} className="warning-sign">No more transactions!</p>
+                                </div>
                             :
-                            <SeacrhResults result={input}/>
+                                <SeacrhResults searchedFor={input}/>
                      } 
                     </div>
 

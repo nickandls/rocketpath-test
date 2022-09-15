@@ -28,16 +28,10 @@
     align-items: center;
 } 
 
-/* Specifying the alignment of the columns  */
-.left-column{
-    text-align: left;
-}
 .column > h4 {
     margin-top: -10px;
 }
-.right-column {
-    text-align: right;
-}
+
 
 /* Active and Non-Active Card Effects */
 #card.active {

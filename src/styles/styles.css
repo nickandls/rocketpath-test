@@ -55,6 +55,14 @@ p {
     width: 33.3%
 }
 
+/* Specifying the alignment of the columns  */
+.left-column{
+    text-align: left;
+}
+.right-column {
+    text-align: right;
+}
+
 /* Clear floats after the columns */
 .row:after {
     content: "";

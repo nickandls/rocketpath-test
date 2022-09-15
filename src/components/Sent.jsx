@@ -1,5 +1,5 @@
 import React from "react";
-import { transactionDatabase } from "../transactionDatabaseDemo";
+import { transactionData } from "../transactionData";
 import User from "./User";
 
 export default function Sent(props, {children}) {
@@ -24,7 +24,7 @@ export default function Sent(props, {children}) {
         <div id="users-content">
 
             {
-                transactionDatabase.slice().reverse().map((trans, key) => (
+                transactionData.slice().reverse().map((trans, key) => (
                     <div id={key}>
                        
                         {

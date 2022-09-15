@@ -4,6 +4,25 @@
     font-size: 20px;
     padding-top: 2rem;
 }
+
+
+
+/* Tab Styling */
+.transaction-tabs {
+    text-align: center;
+}
+
+.transaction-panel {
+    text-align: left;
+}
+
+
+/* Top bar of transations section (search bar, icons) */
+
+.transaction-top-bar {
+    display: flex;
+}
+
 /* Search bar styling */
 .search-bar {
     text-align: left;
@@ -21,13 +40,39 @@
     opacity: 0.5;
 }
 
-/* Tab Styling */
-.transaction-tabs {
-    text-align: center;
+
+
+/* Icons */
+.icons-transaction {
+    padding-top: 1rem;
 }
 
-.transaction-panel {
-    text-align: left;
+.icons-transaction svg {
+    padding-left: 2rem;
+    color: white;
+    stroke: rgb(84, 84, 84);
+    stroke-width: 10px;
+    font-weight: lighter;
+    transition: ease .2s all;
+    cursor: pointer;
+}
+
+.icons-transaction svg:hover {
+    transform: scale(1.2);
+    stroke: blue;
+}
+
+
+/* Edit Radio Optios of Wallet/Settings/ChartPie */
+
+[type=radio] { 
+    opacity: 0;
+}
+
+[type=radio]:checked + svg {
+    transform: scale(1.2);
+    stroke: blue;
+    stroke-width: 20px;
 }
 
 /* Edit React Tabs library */
@@ -58,6 +103,10 @@
 /* Responsiveness */
 
 @media only screen and (max-width: 992px) {
+    .icons-transaction svg:hover {
+        transform: scale(1);
+    }
+
     .search-bar {
         width:95%;
     }
@@ -73,4 +122,14 @@
         padding-right: 2rem;
     }
 
+    
+
+}
+@media only screen and (max-width: 768px) {
+    .right-column {
+        display: none;
+    }
+    .search-transaction {
+        width: 100% !important;
+    }
 }

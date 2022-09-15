@@ -1,8 +1,7 @@
-// This is a demo Local Database file for the user's cards
+// This is a demo data file for the user's cards
 
-export const cardDatabase = [
+export const cardData = [
     {
-        key: "1",
         defaultClass: "non-active",
         type: "VISA",
         number: "3546",
@@ -11,7 +10,6 @@ export const cardDatabase = [
         color: "#64fc6c"
     },
     {
-        key: "2",
         defaultClass: "active",
         type: "VISA",
         number: "3849",
@@ -20,7 +18,6 @@ export const cardDatabase = [
         color: "#9b6dff"
     },
     {
-        key: "3",
         defaultClass: "non-active",
         type: "VISA",
         number: "3849",

@@ -1,6 +1,6 @@
-// This is a demo Local Database file for the transactions
+// This is a demo data file for the transactions
 
-export const transactionDatabase = [
+export const transactionData = [
     {
         date: "11/09/2022",        
         users: [
@@ -12,7 +12,7 @@ export const transactionDatabase = [
             },
             {
                 profile: "./images/user-profile-pic-2.jpg",
-                name:"Annie Moore",
+                name:"Kate Moore",
                 expenseDate: "11/09/2022",
                 expense: 247.50
             },
@@ -30,10 +30,10 @@ export const transactionDatabase = [
         date: "14/09/2022",        
         users: [
             { 
-                    profile: "./images/user-profile-pic-3.jpg",
-                    name:"John Doe",
-                    expenseDate: "14/09/2022",
-                    expense: 150
+                profile: "./images/user-profile-pic-3.jpg",
+                name:"John Doe",
+                expenseDate: "14/09/2022",
+                expense: 150
             }
         ],
     },
