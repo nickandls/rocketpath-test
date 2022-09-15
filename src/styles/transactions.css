@@ -126,7 +126,7 @@
 
 }
 @media only screen and (max-width: 768px) {
-    .right-column {
+    .icons-transaction {
         display: none;
     }
     .search-transaction {
