@@ -19,11 +19,8 @@
 
 /* Top bar of transations section (search bar, icons) */
 
-.transaction-top-bar {
-    display: flex;
-}
-
 /* Search bar styling */
+
 
 .search-bar {
     text-align: left;
@@ -47,8 +44,6 @@
 .search-button svg {
     opacity: 0.5;
 }
-
-
 
 /* Icons */
 .icons-transaction {
@@ -135,6 +130,7 @@
         display: none;
     }
     .search-transaction {
-        width: 100% !important;
+        width: 100% !important;text-align: center !important;
     }
+
 }

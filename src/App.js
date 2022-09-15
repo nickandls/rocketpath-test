@@ -17,6 +17,11 @@ import styles from "./styles/styles.css";
 
 
 export default function App() {
+
+  const acticeCard = cardData.findIndex(card =>
+      card.defaultClass === "active"
+  )
+
   return (
     <div className="App" style={styles}>
       <Header/>
@@ -27,6 +32,8 @@ export default function App() {
       */}
 
         <Swiper
+          initialSlide={acticeCard}
+          centeredSlides={true}
           modules={[Grid]}
           breakpoints={{
             640: {

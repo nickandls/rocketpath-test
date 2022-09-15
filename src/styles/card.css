@@ -62,16 +62,8 @@
 /* Responsiveness up to smartphone/some tablets (small/medium screens) */
 @media only screen and (max-width: 768px) {
 
-    /*  
-        Changing some CSS of the swiper 
-        !important was used to bypass the default swiper CSS
-     */
-    .swiper-slide.swiper-slide-next {
-        margin: auto !important;
-    }
     .swiper-slide {
-        padding-top: 1.5rem !important;
-        padding-bottom: 1.5rem !important;
+        margin: auto !important;
     }
 
     /* Changing some Card CSS */
@@ -81,10 +73,20 @@
         width: 20rem;
         color: white;
         cursor: none;
+        transform: scale(0.8);
     }
 
-    #card div {
+    #card .owner-details {
         margin-bottom: -10px;
+    }
+    #card.non-active {
+        opacity: 0.5;
+        transform: scale(0.7);
+    }
+    
+    #card.non-active:hover {
+        opacity: 0.8;
+        transform: scale(0.7);
     }
 
 }
