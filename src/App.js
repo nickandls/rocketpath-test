@@ -33,7 +33,6 @@ export default function App() {
 
         <Swiper
           initialSlide={acticeCard}
-          centeredSlides={true}
           modules={[Grid]}
           breakpoints={{
             640: {
@@ -42,7 +41,7 @@ export default function App() {
             },
             768: {
               slidesPerView: 1,
-              spaceBetween: 40,
+              spaceBetween: 30,
             },
             1024: {
               slidesPerView: 3,
