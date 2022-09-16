@@ -73,7 +73,7 @@
         width: 20rem;
         color: white;
         cursor: none;
-        transform: scale(0.8);
+        transform: scale(0.9);
     }
 
     #card .owner-details {
